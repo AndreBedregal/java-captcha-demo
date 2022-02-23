@@ -66,7 +66,7 @@ public class CaptchaController {
             return new ResponseEntity<>("Hello " + username, HttpStatus.OK);
         } else {
             log.info("Wrong captcha");
-            return new ResponseEntity<>("Wrong captcha", HttpStatus.OK);
+            return new ResponseEntity<>("Wrong captcha", HttpStatus.BAD_REQUEST);
         }
     }
 
